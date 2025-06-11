@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nossas Memórias ❤️ - Feliz Dia dos Namorados!</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: 1000px;
+      background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+      background-position: center center;
+      overflow: hidden;
+      font-family: 'Zeyada', cursive;
+      background-color: #f9f0e6;
+      position: relative;
+    }
+    
+    .paper {
+      background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+      background-size: 500px;
+      background-position: center center;
+      padding: 15px 25px;
+      transform: rotateZ(-5deg);
+      box-shadow: 1px 10px 15px 0px rgba(0,0,0,0.3);
+      position: absolute;
+      max-width: 320px;
+      transition: transform 0.3s ease;
+      cursor: grab;
+      border-radius: 5px;
+    }
+    
+    .paper.heart {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      padding: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    
+    .paper.image {
+      padding: 12px;
+      text-align: center;
+    }
+    
+    .paper.image p {
+      font-size: 22px;
+      margin: 8px 0;
+      line-height: 1.3;
+    }
+    
+    img {
+      max-height: 150px;
+      max-width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+      margin-top: 8px;
+      object-fit: cover;
+    }
+    
+    .paper.heart::after {
+      content: "";
+      background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: 120px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      transition: transform 0.5s;
+    }
+    
+    .paper.heart:hover::after {
+      transform: scale(1.1);
+    }
+    
+    p {
+      font-family: 'Zeyada';
+      font-size: 26px;
+      color: #8B0000;
+      opacity: 0.9;
+      user-select: none;
+      text-align: center;
+      line-height: 1.3;
+    }
+    
+    .date {
+      font-size: 20px;
+      color: #666;
+      margin-top: 4px;
+      font-weight: bold;
+    }
+    
+    .instructions {
+      font-size: 22px;
+      color: #00008B;
+      text-align: center;
+      margin: 5px 0;
+    }
+    
+    .header {
+      position: absolute;
+      top: 20px;
+      text-align: center;
+      width: 100%;
+      z-index: 100;
+    }
+    
+    .header h1 {
+      font-family: 'Zeyada', cursive;
+      font-size: 42px;
+      color: #8B0000;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    
+    .footer {
+      position: absolute;
+      bottom: 15px;
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
+      color: #555;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Nossa História ❤️</h1>
+  </div>
+  
+  <!-- Papel 5: Mensagem final + Coração -->
+  <div class="paper heart"></div>
+  
+  <!-- Papéis com memórias -->
+  <div class="paper image">
+    <p>10 de julho, o mês mal começou e eu já tenho muito a dizer. O tanto que eu te admiro, a sua forma de lidar com tudo… me deixa cada vez mais de queixo caído.</p>
+    <p>Você é perfeita em todos os aspectos possíveis, até nos mínimos detalhes, como o seu sorriso lindo que já virou marca registrada.</p>
+    <img src="nm5.jpg" />
+    <p class="date">10 de julho 2025</p>
+  </div>
+  
+  <div class="paper image">
+    <p>4 de maio marcou tudo com o nosso primeiro mês de namoro. Ali já não tinha como... eu já estava perdidamente apaixonado por você.</p>
+    <p>O sentimento é tão forte que não consigo expressar com palavras — mas sim com ações. Como te dar vários beijinhos.</p>
+    <img src="nm4.jpg" />
+    <p class="date">4 maio 2025</p>
+  </div>
+  
+  <div class="paper image">
+    <p>1º de abril, recheado de emoções. Nossa viagem para Salinas foi incrível!</p>
+    <p>Aquilo foi cena de filme: a gente no pôr do sol, o vento batendo na gente, e eu me tremendo todo, deixando a aliança cair no chão enquanto te pedia em namoro. 💍🌅💕</p>
+    <img src="nm3.jpg" />
+    <p class="date">1 Abril 2025</p>
+  </div>
+  
+  <div class="paper image">
+    <p>12 de março, sem dúvidas o melhor mês das nossas vidas. Foi como eu sempre digo quando a gente relembra do passado: "a gente viveu um filme."
+Simplesmente participamos de um campeonato de nível nacional de robótica, curtimos cada segundo juntos naquele PUTAAAAAAA hotel, e ainda te empurrei numa cadeira de rodas (melhor parte ).</p>
+    <p>Não existe textinho meloso o suficiente que consiga descrever o quão emocionante foi esse mês.</p>
+    <img src="nm2.jpg" />
+    <p class="date">12 de março de 2025</p>
+  </div>
+  
+  <div class="paper image">
+    <p>1 de fevereiro, Quem diria que encher o seu saco pra me ajudar a colocar um parafuso ia dar tão certo. Desde que a gente se conheceu, eu fico enchendo a sua paciência pra arrancar um dos seus lindos sorrisos. Valeu a pena cada segundo que fiquei na sala da F1 fazendo fatiamento pra vocês.</p>
+    <p>Essa foto foi a primeira que a gente tem registrada no meu celular. Daí em diante, a gente foi criando váááárias memórias juntos — desde desenhar pirocas nas suas costas até passeios por aí</p>
+    <img src="nah.png" />
+    <p class="date">1 de Fevereiro 2025</p>
+  </div>
+  
+  <!-- Papel 1: Instruções -->
+  <div class="paper">
+    <p class="instructions">Arraste os papéis para revelar nossas memórias!</p>
+    <p class="instructions">⇦ ⇨ Clique e arraste para mover</p>
+    <p class="instructions">Botão direito do mouse para girar</p>
+  </div>
+  
+  <div class="footer">
+    Feito com ❤️ para o Dia dos Namorados
+  </div>
+
+<script>
+  let highestZ = 1;
+
+  class Paper {
+    holdingPaper = false;
+    mouseTouchX = 0;
+    mouseTouchY = 0;
+    mouseX = 0;
+    mouseY = 0;
+    prevMouseX = 0;
+    prevMouseY = 0;
+    velX = 0;
+    velY = 0;
+    rotation = Math.random() * 30 - 15;
+    currentPaperX = 0;
+    currentPaperY = 0;
+    rotating = false;
+
+    init(paper) {
+      document.addEventListener('mousemove', (e) => {
+        if(!this.rotating) {
+          this.mouseX = e.clientX;
+          this.mouseY = e.clientY;
+          this.velX = this.mouseX - this.prevMouseX;
+          this.velY = this.mouseY - this.prevMouseY;
+        }
+        
+        const dirX = e.clientX - this.mouseTouchX;
+        const dirY = e.clientY - this.mouseTouchY;
+        const dirLength = Math.sqrt(dirX*dirX+dirY*dirY);
+        const dirNormalizedX = dirX / dirLength;
+        const dirNormalizedY = dirY / dirLength;
+
+        const angle = Math.atan2(dirNormalizedY, dirNormalizedX);
+        let degrees = 180 * angle / Math.PI;
+        degrees = (360 + Math.round(degrees)) % 360;
+        
+        if(this.rotating) {
+          this.rotation = degrees;
+        }
+        
+        if(this.holdingPaper) {
+          if(!this.rotating) {
+            this.currentPaperX += this.velX;
+            this.currentPaperY += this.velY;
+          }
+          this.prevMouseX = this.mouseX;
+          this.prevMouseY = this.mouseY;
+          
+          paper.style.transform = `translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) rotateZ(${this.rotation}deg)`;
+        }
+      });
+      
+      paper.addEventListener('mousedown', (e) => {
+        if(this.holdingPaper) return;
+        
+        this.holdingPaper = true;
+        paper.style.zIndex = highestZ;
+        highestZ += 1;
+        
+        if(e.button === 0) {
+          this.mouseTouchX = this.mouseX;
+          this.mouseTouchY = this.mouseY;
+          this.prevMouseX = this.mouseX;
+          this.prevMouseY = this.mouseY;
+        }
+        if(e.button === 2) {
+          this.rotating = true;
+        }
+      });
+      
+      window.addEventListener('mouseup', () => {
+        this.holdingPaper = false;
+        this.rotating = false;
+      });
+      
+      // Impedir menu de contexto (botão direito)
+      paper.addEventListener('contextmenu', (e) => e.preventDefault());
+    }
+  }
+
+  const papers = Array.from(document.querySelectorAll('.paper'));
+  papers.forEach(paper => {
+    const p = new Paper();
+    p.init(paper);
+    
+    // Posição inicial aleatória
+    paper.style.left = `${Math.random() * 100 - 50}px`;
+    paper.style.top = `${Math.random() * 100 - 50}px`;
+  });
+
+  // Animação do coração
+  const heart = document.querySelector('.heart');
+  setInterval(() => {
+    heart.style.transform = `scale(${1 + Math.sin(Date.now()/500)*0.1})`;
+  }, 100);
+</script>
+</body>
+</html>

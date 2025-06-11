@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Essa é pro meu amor 💞</title>
+
+<style type="text/css">
+@font-face {
+  font-family: 'Lovely Valentine';
+  src: url('Lovely Valentine.ttf') format('truetype');
+}
+</style>
+<link href="default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="garden.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 60 },
+    "color": { "value": "#e1bee7" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.6 },
+    "size": { "value": 4 },
+    "move": { "enable": true, "speed": 1.5 }
+  },
+  "interactivity": {
+    "events": { "onhover": { "enable": true, "mode": "repulse" } }
+  }
+});
+</script>
+
+<body>
+<div id="particles-js"></div>
+<div id="mainDiv">
+    <div id="content">
+        <div id="code">
+            <span class="comments">/**</span><br />
+            <span class="space"/><span class="comments">*Código do amor</span><br />
+            <span class="space"/><span class="comments">*/</span><br />
+            Oi Isa! :) <br />
+Lembra quando tudo começou, amor? <br />
+<span class="comments">// Dia 1 de abril</span><br />
+Desde aquele momento na praia, algo diferente aconteceu <br />
+<span class="comments">// Seu rosto, sua voz, seu sorriso 💞</span><br />
+Ficou tudo gravado no meu coração como um filme bonito<br />
+O tempo vai passando <br />
+E a gente vai se conectando cada vez mais... cada dia eu quero estar mais perto de você<br />
+Vão ter dias incríveis<br />
+Outros um pouco cansativos<br />
+E alguns que talvez nem mereçam ser lembrados<br />
+<span class="comments">// Mas sei que tudo isso faz parte.</span><br />
+Porque, no fim, nosso vínculo sempre vai sair mais forte de tudo isso.<br />
+<br>
+<br>
+Eu te amo demais, Isa. — Mayke 💖
+            <br>
+            <br>
+            Sempre que quiser lembrar da nossa história, clica no coração <br />
+            <br>
+            <span id="heartspan">
+            <a href="index2.html"><i class="fas fa-heart" id="icon"></i></a>
+            </span>
+        </div>
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                  MAYKE & ISA
+                    <div id="elapseClock"></div>
+                </div> 
+                <div id="loveu">
+                    EU TE AMO! <br/>
+                    <div class="signature">- Mayke</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2025, 3, 1); // Abril é mês 3 (zero-indexado)
+together.setHours(17);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+    var msg = document.createElement("div");
+    msg.id = "errorMsg";
+    msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+    document.body.appendChild(msg);
+    $("#code").css("display", "none")
+    $("#copyright").css("position", "absolute");
+    $("#copyright").css("bottom", "10px");
+    document.execCommand("stop");
+} else {
+    setTimeout(function () {
+        startHeartAnimation();
+    }, 5000);
+
+    timeElapse(together);
+    setInterval(function () {
+        timeElapse(together);
+    }, 500);
+
+    adjustCodePosition();
+    $("#code").typewriter();
+}
+</script>
+</body>
+</html>

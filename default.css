@@ -1,0 +1,158 @@
+/* Importa a fonte Satisfy do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/* ...existing code... */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+body {
+   background: linear-gradient(to bottom right, #d284e0, #ba78e3);
+  font-size: 12px;
+  overflow: auto;
+  color: #f3e5f5;
+  min-height: 100vh;
+}
+
+#mainDiv {
+  width: 100%;
+  height: 100%;
+}
+
+#loveHeart {
+  float: left;
+  width: 670px;
+  height: 625px;
+}
+
+#garden {
+  width: 100%;
+  height: 100%;
+}
+
+#elapseClock {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#elapseClock .digit {
+  font-family: "digit";
+  font-size: 40px;
+  text-align: center;
+  color: #ffccff;
+}
+
+#words {
+  font-family: "sans-serif";
+  width: 500px;
+  font-size: 24px;
+  color: #f3e5f5;
+}
+
+#messages,
+#loveu {
+  color: #ffffff;
+  text-shadow: 0 0 10px #e1bee7;
+}
+
+#messages {
+  display: none;
+  text-align: center;
+  font-size: 30px;
+}
+
+#loveu {
+  padding: 5px;
+  font-size: 22px;
+  margin-top: 80px;
+  margin-right: 120px;
+  text-align: right;
+  display: none; /* mantém oculto até ser exibido via JS */
+  font-family: 'Satisfy', cursive;
+}
+
+#loveu .signature {
+  margin-top: 10px;
+  font-size: 26px;
+  font-family: 'Satisfy', cursive;
+}
+
+#clickSound {
+  display: none;
+}
+
+#code {
+  float: left;
+  width: 440px;
+  height: 400px;
+  color: #4a148c;
+  font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif"; 
+  font-size: 12px;
+}
+
+#code .string {
+  color: #2a36ff;
+}
+
+#code .keyword {
+  color: #7f0055;
+  font-weight: bold;
+}
+
+#code .placeholder {
+  margin-left: 15px;
+}
+
+#code .space {
+  margin-left: 7px;
+}
+
+#code .comments {
+  color: #3f7f5f;
+}
+
+#copyright {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  color: #666;
+}
+
+#errorMsg {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+#copyright a {
+  color: #666;
+}
+
+#icon {
+  font-size: 48px;
+  color: #ba68c8;
+  margin: 50px;
+  align-content: center;
+}
+
+#heartspan {
+  align-content: center;
+  text-align: center;
+  margin: 20px;
+}
+/* ...existing code... */
